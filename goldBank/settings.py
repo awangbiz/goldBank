@@ -17,9 +17,9 @@ FIBERNOW_DB_CONFIG={
      
         'ENGINE': 'django.db.backends.oracle',
         'NAME': 'FINEX',
-        'USER': 'fibernow',
-        'PASSWORD': 'fibernow',
-        'HOST': '10.44.37.43',
+        'USER': 'user',
+        'PASSWORD': 'user',
+        'HOST': 'your db ip',
         'PORT': '1539',
   
 }
