@@ -42,13 +42,13 @@ urlpatterns = [
     #  drf_yasg code starts here
     re_path(r'^doc(?P<format>\.json|\.yaml)$',
             schema_view.without_ui(cache_timeout=0), name='schema-json'),  #<-- Here
-    path('docs', schema_view.with_ui('swagger', cache_timeout=0),
+    path('', schema_view.with_ui('swagger', cache_timeout=0),
          name='schema-swagger-ui'),  #<-- Here
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0),
          name='schema-redoc'),  #<-- Here
     # drf_yasg code ends here
 
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('', include('api.urls')),
     # path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 

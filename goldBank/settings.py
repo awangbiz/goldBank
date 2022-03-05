@@ -138,29 +138,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
-#SWAGGER_SETTINGS
 SWAGGER_SETTINGS = {
        "exclude_namespaces": ['rest_logout', ],  # List URL namespaces to ignore
-    # "SUPPORTED_SUBMIT_METHODS": [  # Specify which methods to enable in Swagger UI
-    #     'get',
-    #     'post',
-    #     'put',
-    #     'delete'
-    # ],
-    # "SUPPORTED_SUBMIT_METHODS": [  # Specify which methods to enable in Swagger UI   
-    # ],
-    # 'SECURITY_DEFINITIONS': {
-    #     'api_key': {
-    #         'type': 'apiKey',
-    #         'in': 'header',
-    #         'name': 'Authorization'
-    #     },
-    #     'basic': {
-    #         'type': 'basic'
-    #     }
-    # },
-    # 'SECURITY_DEFINITIONS': None,
-
+   
     'JSON_EDITOR': True,
     'REFETCH_SCHEMA_ON_LOGOUT':False ,#True,
     'USE_SESSION_AUTH': False, #True,
