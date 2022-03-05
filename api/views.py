@@ -8,6 +8,8 @@ from rest_framework import status
 import json
 from .serializer import AccountSerializer
 from .models import Account
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
 
 
 class AccountViewSets(viewsets.ModelViewSet):
@@ -103,9 +105,32 @@ class AccountViewSets(viewsets.ModelViewSet):
                 return Response({'status':'success'})
         except Exception as e:
             return Response({'status':'failed','error_msg':str(e)},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+    
+    @swagger_auto_schema(
+        operation_description="amount to transfer",
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            required=['amount'],
+            properties={
+                'amount': openapi.Schema(type=openapi.TYPE_NUMBER)
+            },
+        ),
+        # security=[],
+        # tags=['Users'],
+    )
     @action(detail=False, methods=['POST',], name='transfer to goal')
     def transferSavingToGoalAcc(self, request, *args, **kwargs):
+        """
+            This text is the description for this API.
+
+            ---
+            parameters:
+            - name: amount
+            description: transfer amount
+            required: true
+            type: float
+            paramType: form
+        """
         try:
             res = {}
             req = None

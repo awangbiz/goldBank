@@ -26,9 +26,9 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Account Management",
+        title="Bank Account Management",
         default_version='1.0',
-        description="TM Account Mamnagement API",
+        description="TM Account Management API",
         # terms_of_service="https://www.",
         # contact=openapi.Contact(email="jason@jaseci.org"),
         # license=openapi.License(name="Awesome IP"),
