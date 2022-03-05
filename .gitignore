@@ -1,0 +1,13 @@
+api/__pycache__/__init__.cpython-39.pyc
+api/__pycache__/admin.cpython-39.pyc
+api/__pycache__/apps.cpython-39.pyc
+api/__pycache__/models.cpython-39.pyc
+api/__pycache__/serializer.cpython-39.pyc
+api/__pycache__/urls.cpython-39.pyc
+api/__pycache__/views.cpython-39.pyc
+api/migrations/__pycache__/__init__.cpython-39.pyc
+goldBank/__pycache__/__init__.cpython-39.pyc
+goldBank/__pycache__/settings.cpython-39.pyc
+goldBank/__pycache__/urls.cpython-39.pyc
+goldBank/__pycache__/wsgi.cpython-39.pyc
+db.sqlite3
