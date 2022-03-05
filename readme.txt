@@ -21,7 +21,9 @@ FIBERNOW_DB_CONFIG={
 }
 ##### END DB CONFIG
 
-3.run the project and to access swagger on local machine go to http://localhost:8000/
+
+3.github url https://github.com/awangbiz/goldBank.git
+run the project and to access swagger on local machine go to http://localhost:8000/
 
 4. sample working app screen shot in 
 c:/goldBank/swagger api test sample.png
